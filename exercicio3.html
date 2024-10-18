@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <style>
+        fieldset {
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            margin-top: 10px;
+        }
+
+        /* Ajuste para manter os elementos em uma linha */
+        .inline {
+            display: flex;
+            align-items: center;
+        }
+
+        .inline input[type="text"],
+        .inline input[type="email"],
+        .inline input[type="password"],
+        .inline select {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+            resize: none;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="index.html" method="post">
+        <!-- Dados pessoais -->
+        <fieldset>
+            <legend>1 - Dados pessoais</legend>
+            <table>
+                <tr>
+                    <td><label for="nome">Nome:</label></td>
+                    <td><input type="text" id="nome" name="nome" required></td>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="senha">Senha:</label></td>
+                    <td><input type="password" id="senha" name="senha" required></td>
+                    <td><label for="confirma_senha">Confirma senha:</label></td>
+                    <td><input type="password" id="confirma_senha" name="confirma_senha" required></td>
+                </tr>
+                <tr>
+                    <td><label>Idade:</label></td>
+                    <td colspan="3" class="inline">
+                        <input type="radio" id="idade_acima" name="idade" value="acima_17">
+                        <label for="idade_acima">Acima 17</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Perfil -->
+        <fieldset>
+            <legend>2 - Perfil</legend>
+            <table>
+                <tr>
+                    <td><label for="descricao">Descrição:</label></td>
+                    <td colspan="3"><textarea id="descricao" name="descricao" rows="2"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="perfil_trabalho">Perfil trabalho:</label></td>
+                    <td>
+                        <select id="perfil_trabalho" name="perfil_trabalho">
+                            <option value="frontend">Front-End Developer</option>
+                            <option value="backend">Back-End Developer</option>
+                            <option value="analista">Analista</option>
+                        </select>
+                    </td>
+                    <td><label>Interesses:</label></td>
+                    <td class="inline">
+                        <input type="checkbox" id="interesse_design" name="interesses" value="design">
+                        <label for="interesse_design">Design</label>
+                        <input type="checkbox" id="interesse_analista" name="interesses" value="analista">
+                        <label for="interesse_analista">Analista</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Botão de envio -->
+        <div class="submit-btn">
+            <button type="submit">Enviar dados</button>
+        </div>
+    </form>
+</body>
+</html>
