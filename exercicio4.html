@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Maria Silva</title>
+    <style>
+        /* Centralizar e estilizar o nome */
+        #nome {
+            text-align: center;
+            color: blue; /* Escolha uma cor desejada */
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Centralizar a imagem */
+        #foto {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para os títulos com efeito de hover */
+        .titulo {
+            background-color: #d3d3d3; /* Fundo cinza */
+            padding: 10px;
+            transition: background-color 1.5s ease; /* Transição */
+            font-weight: bold;
+        }
+
+        .titulo:hover {
+            background-color: #a9a9a9; /* Alteração de cor no hover */
+        }
+
+        /* Estilo para a tag <p> */
+        p {
+            font-family: Verdana, sans-serif;
+        }
+
+        /* Estilo para listas ordenadas */
+        ol {
+            list-style-type: upper-alpha;
+        }
+
+        /* Estilo para a cor de fundo do e-mail, rede social e idade */
+        .fundo-azul {
+            background-color: #add8e6; /* Azul claro */
+            padding: 5px;
+            margin: 5px 0;
+        }
+
+        /* Estilo para as divs de seções */
+        .minhadiv {
+            border: 2px dashed black;
+            background-color: #d3d3d3; /* Fundo cinza */
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Nome centralizado -->
+    <div id="nome">Maria Silva</div>
+
+    <!-- Foto centralizada -->
+    <div id="foto">
+        <img src="foto.png" alt="Foto de Maria Silva" width="100" height="100">
+    </div>
+
+    <!-- Informações de contato com fundo azul claro -->
+    <div class="fundo-azul">rede social</div>
+    <div class="fundo-azul">idade</div>
+    <div class="fundo-azul">meuemail@gmail.com</div>
+
+    <!-- Seção de Formações Acadêmicas -->
+    <div>
+        <div class="titulo">A. Formações acadêmicas</div>
+        <div class="minhadiv">
+            <ol>
+                <li>1995 - 2000 | <a href="#">Universidade Federal do Espírito Santo (UFES)</a>
+                    <p>Ciência da Computação</p>
+                </li>
+                <li>1990 a 1993 | <a href="#">Escola Técnica Federal</a>
+                    <p>Técnico em Processamento de Dados</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Seção de Formações Complementares -->
+    <div>
+        <div class="titulo">B. Formações complementares</div>
+        <div class="minhadiv">
+            <ol>
+                <li>1990 a 2000 | Inglês</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Seção de Soft Skills -->
+    <div>
+        <div class="titulo">C. Soft Skill</div>
+        <div class="minhadiv">
+            <ol>
+                <li><a href="#">Empatia</a></li>
+                <li><a href="#">Ética</a></li>
+            </ol>
+        </div>
+    </div>
+
+</body>
+</html>
