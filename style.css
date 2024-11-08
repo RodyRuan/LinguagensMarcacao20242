@@ -1,0 +1,87 @@
+/* Seletor para o body */
+body {
+    background-color: #f0f0f0; /* Cor de fundo suave para a página */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+}
+
+/* Classe para a div principal .container */
+.container {
+    background-color: #ffffff; /* Cor de fundo da div principal */
+    width: 960px; /* Largura da div principal */
+    margin: auto; /* Centraliza a div na tela */
+}
+
+/* Seletores agrupados para header e footer */
+header, footer {
+    background-color: #2c3e50; /* Cor de fundo do header e footer */
+    color: #ecf0f1; /* Cor do texto no header e footer */
+    padding: 20px;
+}
+
+/* Estilo para o título h1 */
+h1 {
+    background-color: #3498db; /* Cor de fundo para o título "Fotografia de Paisagens" */
+    font-family: 'Roboto', sans-serif; /* Fonte 'Roboto' aplicada ao título */
+    padding: 10px; /* Espaçamento interno para o título */
+}
+
+/* Estilo para a lista dentro de <nav> */
+nav ul {
+    list-style-type: none; /* Remove os marcadores das listas */
+    padding: 0; /* Remove o padding da lista */
+    margin: 0; /* Remove a margem da lista */
+}
+
+/* Estilo para os itens de lista dentro de <nav> */
+nav ul li {
+    display: block; /* Exibe os itens de lista de forma vertical */
+    margin-bottom: 10px; /* Espaço entre os itens da lista */
+}
+
+/* Estilo para os links <a> dentro de <nav> */
+nav a {
+    color: #ecf0f1; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Seletor para a tabela */
+table {
+    width: 400px; /* Tamanho da tabela */
+    margin: auto; /* Centraliza a tabela na tela */
+    border-collapse: collapse; /* Remove os espaços entre as bordas das células */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilo para as células da tabela */
+td, th {
+    padding: 10px; /* Espaçamento interno nas células */
+    text-align: left; /* Alinha o texto à esquerda */
+    border-bottom: 1px solid #ddd; /* Borda inferior das células */
+}
+
+/* Seletor para a imagem na tabela */
+table img.produto-imagem {
+    width: 100%; /* Faz com que a imagem ocupe 100% da largura da célula */
+    border-radius: 25px; /* Bordas arredondadas para as imagens */
+}
+
+/* Efeito hover para as linhas da tabela */
+tr:hover {
+    background-color: #f2f2f2; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para caixas de texto e textarea */
+input[type="text"], textarea {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento externo */
+    border: 1px solid #ddd; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilo para o foco nas caixas de texto */
+input[type="text"]:focus, textarea:focus {
+    background-color: #d1ecf1; /* Cor de fundo ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
