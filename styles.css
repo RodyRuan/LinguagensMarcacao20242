@@ -1,0 +1,69 @@
+/* Cor de fundo pastel */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe8d6; /* Cor pastel escolhida no ColorHunt */
+    margin: 0;
+    padding: 0;
+}
+
+/* Contêiner */
+.container {
+    max-width: 90%; /* Unidade relativa para responsividade */
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    font-size: 1.8rem; /* Unidade relativa */
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%; /* Unidade relativa para ocupar toda a tela */
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    table-layout: fixed; /* Garante que a largura das células seja fixa */
+}
+
+/* Cabeçalho da tabela */
+thead th {
+    background-color: #f8f8f8;
+    text-align: center;
+    font-size: 1rem; /* Unidade relativa */
+    text-transform: uppercase; /* Letras maiúsculas */
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+/* Linhas da tabela */
+tbody tr {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+}
+
+/* Fundo alternado para linhas */
+tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+/* Células */
+td, th {
+    text-align: center;
+    padding: 0.7rem; /* Unidade relativa para espaçamento interno */
+    word-wrap: break-word; /* Ajusta conteúdo ao tamanho da célula */
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Reduz tamanho do título */
+    }
+
+    table {
+        font-size: 0.9rem; /* Ajusta fonte da tabela */
+    }
+}

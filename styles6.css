@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+form {
+    background: #f9f9f9; /* Fundo cinza clarinho */
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; /* Borda cinza sutil */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #2b8a3e;
+    display: flex;
+    align-items: center;
+}
+
+legend::before {
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #2b8a3e;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 15px;
+    margin: 0;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 #ccc;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
