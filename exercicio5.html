@@ -3,48 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatório de Produção de Peças</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Relatório Anual de Produção de Peças</title>
+    <style>
+        body {
+            background-color: #f4f1de;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo da tabela */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+            table-layout: fixed;
+            margin: 0;
+            padding: 0;
+            overflow-x: auto; 
+        }
+
+        /* Estilo do título */
+        h1 {
+            font-size: 2.5vw;
+            text-align: center;
+            color: #3d405b;
+        }
+
+        /* Estilo das linhas da tabela */
+        tr {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            margin: 1vw 0; 
+        }
+
+        /* Estilo das células da tabela */
+        td, th {
+            padding: 1vw;
+            text-align: center;
+        }
+
+        /* Estilo do cabeçalho da tabela */
+        th {
+            background-color: #81b29a;
+            color: white;
+            font-size: 1.5vw;
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Relatório anual de produção de peças</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Descrição</th>
-                    <th>Quantidade</th>
-                    <th>Valor</th>
-                    <th>Período de Produção</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Placa mãe NVIDIA</td>
-                    <td>500</td>
-                    <td>1.600,00</td>
-                    <td>03/01/2023 - 03/31/2023</td>
-                </tr>
-                <tr>
-                    <td>Fonte Gamemax</td>
-                    <td>450</td>
-                    <td>350,00</td>
-                    <td>02/01/2023 - 02/29/2023</td>
-                </tr>
-                <tr>
-                    <td>Processador AMD 3.7GHz</td>
-                    <td>1.000</td>
-                    <td>587,00</td>
-                    <td>02/01/2023 - 02/29/2023</td>
-                </tr>
-                <tr>
-                    <td>Memória DDR4 8G</td>
-                    <td>2.000</td>
-                    <td>200,00</td>
-                    <td>01/01/2023 - 01/31/2023</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <h1>Relatório Anual de Produção de Peças</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>DESCRIÇÃO</th>
+                <th>QUANTIDADE</th>
+                <th>VALOR</th>
+                <th>PERÍODO DE PRODUÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Placa mãe NVIDIA</td>
+                <td>500</td>
+                <td>1.600,00</td>
+                <td>03/01/2023 - 03/31/2023</td>
+            </tr>
+            <tr>
+                <td>Fonte Gamemax</td>
+                <td>450</td>
+                <td>350,00</td>
+                <td>02/01/2023 - 02/29/2023</td>
+            </tr>
+            <tr>
+                <td>Processador AMD 3.7GHz</td>
+                <td>1.000</td>
+                <td>587,00</td>
+                <td>02/01/2023 - 02/29/2023</td>
+            </tr>
+            <tr>
+                <td>Memória DDR4 8G</td>
+                <td>2.000</td>
+                <td>200,00</td>
+                <td>01/01/2023 - 01/31/2023</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
